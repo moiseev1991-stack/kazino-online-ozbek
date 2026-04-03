@@ -15,7 +15,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/ — intentionally tracked for Plesk static deployment
 
 # production
 /build
