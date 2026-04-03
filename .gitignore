@@ -1,0 +1,8 @@
+node_modules/
+out/
+img/
+ru/
+uz/
+.next/
+*.tsbuildinfo
+next-env.d.ts
