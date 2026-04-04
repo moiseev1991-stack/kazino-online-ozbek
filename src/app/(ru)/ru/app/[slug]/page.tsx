@@ -38,7 +38,7 @@ export default async function AppPageRu({ params }: Props) {
 
   const breadcrumbs = [
     { label: "Главная", href: "/ru" },
-    { label: page.brandName, href: `/ru/casino/${page.brandSlug}` },
+    { label: page.brandName, href: `/ru/${page.brandSlug}` },
     { label: page.title, href: `/ru/app/${slug}` },
   ];
 
@@ -124,7 +124,7 @@ export default async function AppPageRu({ params }: Props) {
           <p className="text-[#ec4899] font-semibold mb-4">{brand.bonus}</p>
           <div className="flex gap-3">
             <CtaButton
-              href={`/ru/casino/${brand.slug}`}
+              href={`/ru/${brand.slug}`}
               label="Полный обзор"
               variant="outline"
               size="md"

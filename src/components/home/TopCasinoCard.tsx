@@ -17,7 +17,7 @@ const rankMeta = (rank: number) => {
 };
 
 export default function TopCasinoCard({ brand, rank, locale = "uz" }: TopCasinoCardProps) {
-  const reviewHref = locale === "ru" ? `/ru/casino/${brand.slug}` : `/casino/${brand.slug}`;
+  const reviewHref = locale === "ru" ? `/ru/${brand.slug}` : `/${brand.slug}`;
   const goHref = `/go/${brand.slug}`;
   const reviewLabel = locale === "ru" ? "Обзор" : "Sharh";
   const ctaLabel = locale === "ru" ? "Играть →" : "O'ynash →";

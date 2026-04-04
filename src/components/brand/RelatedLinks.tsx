@@ -16,7 +16,7 @@ export default function RelatedLinks({ brands, currentSlug, locale = "uz" }: Rel
 
   const heading = locale === "ru" ? "Другие казино" : "Boshqa kazinolar";
   const ctaLabel = locale === "ru" ? "Обзор" : "Sharh";
-  const hrefBase = locale === "ru" ? "/ru/casino" : "/casino";
+  const hrefBase = locale === "ru" ? "/ru" : "";
 
   return (
     <div className="mb-8">

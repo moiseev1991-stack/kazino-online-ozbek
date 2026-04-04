@@ -10,7 +10,7 @@ interface CasinoCardProps {
 }
 
 export default function CasinoCard({ brand, rank, locale = "uz" }: CasinoCardProps) {
-  const reviewHref = locale === "ru" ? `/ru/casino/${brand.slug}` : `/casino/${brand.slug}`;
+  const reviewHref = locale === "ru" ? `/ru/${brand.slug}` : `/${brand.slug}`;
   const goHref = `/go/${brand.slug}`;
   const reviewLabel = locale === "ru" ? "Читать обзор" : "Sharh o'qish";
   const ctaLabel = locale === "ru" ? "Играть сейчас" : "O'ynash";

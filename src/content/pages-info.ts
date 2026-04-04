@@ -134,7 +134,7 @@ Doim rasmiy domendan foydalaning. Parolingizni boshqalar bilan baham ko'rmang. I
     metaDescription: "1xBet hisobiga kirish bo'yicha to'liq qo'llanma. Rasmiy sayt, mobil ilova va parolni tiklash yo'llari.",
     breadcrumbs: [
       { label: "Bosh sahifa", href: "/" },
-      { label: "1xBet", href: "/casino/1xbet" },
+      { label: "1xBet", href: "/1xbet" },
       { label: "1xBet Kirish", href: "/1xbet-kirish-login" },
     ],
   },
@@ -168,7 +168,7 @@ Birinchi depozit qiling va xush kelibsiz bonusini oling. KYC tasdiqlovchi hujjat
     metaDescription: "1xBet da ro'yxatdan o'tish bo'yicha to'liq qo'llanma. Barcha usullar: bir klik, telefon, email. Bonus olish.",
     breadcrumbs: [
       { label: "Bosh sahifa", href: "/" },
-      { label: "1xBet", href: "/casino/1xbet" },
+      { label: "1xBet", href: "/1xbet" },
       { label: "1xBet Ro'yxatdan O'tish", href: "/1xbet-royxatdan-otish" },
     ],
   },
@@ -202,7 +202,7 @@ Birinchi depozit qiling va xush kelibsiz bonusini oling. KYC tasdiqlovchi hujjat
     metaDescription: "Полное руководство по входу в аккаунт 1xBet. Официальный сайт, мобильное приложение, восстановление пароля.",
     breadcrumbs: [
       { label: "Главная", href: "/ru" },
-      { label: "1xBet", href: "/ru/casino/1xbet" },
+      { label: "1xBet", href: "/ru/1xbet" },
       { label: "Вход 1xBet", href: "/ru/1xbet-kirish-login" },
     ],
   },
@@ -236,7 +236,7 @@ Birinchi depozit qiling va xush kelibsiz bonusini oling. KYC tasdiqlovchi hujjat
     metaDescription: "Полное руководство по регистрации на 1xBet. Все способы: один клик, телефон, email. Как получить бонус.",
     breadcrumbs: [
       { label: "Главная", href: "/ru" },
-      { label: "1xBet", href: "/ru/casino/1xbet" },
+      { label: "1xBet", href: "/ru/1xbet" },
       { label: "Регистрация 1xBet", href: "/ru/1xbet-royxatdan-otish" },
     ],
   },

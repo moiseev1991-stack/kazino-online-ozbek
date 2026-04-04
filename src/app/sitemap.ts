@@ -32,14 +32,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const brandPagesUz: MetadataRoute.Sitemap = brands.map((b) => ({
-    url: `${BASE}/casino/${b.slug}`,
+    url: `${BASE}/${b.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
   const brandPagesRu: MetadataRoute.Sitemap = brands.map((b) => ({
-    url: `${BASE}/ru/casino/${b.slug}`,
+    url: `${BASE}/ru/${b.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
