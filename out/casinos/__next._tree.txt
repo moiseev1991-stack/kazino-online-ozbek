@@ -27,4 +27,4 @@
 :HL["/logos/coldbet.jpg","image"]
 :HL["/logos/cactus-casino.png","image"]
 :HL["/logos/dbbet.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"(uz)","param":null,"prefetchHints":16,"slots":{"children":{"name":"casinos","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"TCu4T94Xslf8LVEGGXoQn"}
+0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"(uz)","param":null,"prefetchHints":16,"slots":{"children":{"name":"casinos","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"DspgBgyFdwrjJ9cMxcg3r"}
