@@ -48,7 +48,7 @@ export default function AppsPage() {
           return (
           <Link
             key={app.slug}
-            href={`/app/${app.slug}`}
+            href={`/${app.slug}`}
             className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:border-pink-200 transition-all p-6 group"
           >
             <div className="flex items-center gap-4 mb-4">

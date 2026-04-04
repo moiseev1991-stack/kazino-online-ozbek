@@ -69,7 +69,7 @@ export default function RuAppsPage() {
                     </div>
                   </div>
                   <Link
-                    href={`/ru/app/${app.slug}`}
+                    href={`/ru/${app.slug}`}
                     className="flex-shrink-0 bg-pink-500 hover:bg-pink-600 text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors whitespace-nowrap"
                   >
                     Скачать

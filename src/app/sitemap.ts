@@ -46,14 +46,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const appPagesList: MetadataRoute.Sitemap = appPages.map((p) => ({
-    url: `${BASE}/app/${p.slug}`,
+    url: `${BASE}/${p.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 
   const appPagesRu: MetadataRoute.Sitemap = appPages.map((p) => ({
-    url: `${BASE}/ru/app/${p.slug}`,
+    url: `${BASE}/ru/${p.slug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: 0.6,

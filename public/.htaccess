@@ -6,6 +6,10 @@ RewriteEngine On
 RewriteRule ^casino/([^/]+)/?$ /$1/ [R=301,L]
 RewriteRule ^ru/casino/([^/]+)/?$ /ru/$1/ [R=301,L]
 
+# Redirect old /app/{slug} URLs to new /{slug} (301 for SEO)
+RewriteRule ^app/([^/]+)/?$ /$1/ [R=301,L]
+RewriteRule ^ru/app/([^/]+)/?$ /ru/$1/ [R=301,L]
+
 # Serve pre-rendered HTML files (trailing slash = directory index)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -45,12 +45,12 @@ export const navGroupsUz: NavGroup[] = [
     label: "Kazino Apk",
     dropdown: [
       { label: "Barcha ilovalar", href: "/apps" },
-      { label: "1xBet App", href: "/app/1xbet-app-mobil" },
-      { label: "888Starz Apk", href: "/app/pin-up-apk-mobile" },
-      { label: "MegaPari App", href: "/app/megapari-app" },
-      { label: "Mostbet App", href: "/app/mostbet-app" },
-      { label: "Pin-Up Apk", href: "/app/pin-up-apk-mobile" },
-      { label: "FunPari App", href: "/app/funpari-app" },
+      { label: "1xBet App", href: "/1xbet-app-mobil" },
+      { label: "888Starz Apk", href: "/pin-up-apk-mobile" },
+      { label: "MegaPari App", href: "/megapari-app" },
+      { label: "Mostbet App", href: "/mostbet-app" },
+      { label: "Pin-Up Apk", href: "/pin-up-apk-mobile" },
+      { label: "FunPari App", href: "/funpari-app" },
     ],
   },
   {
@@ -93,11 +93,11 @@ export const navGroupsRu: NavGroup[] = [
     label: "Казино Apk",
     dropdown: [
       { label: "Все приложения", href: "/ru/apps" },
-      { label: "1xBet App", href: "/ru/app/1xbet-app-mobil" },
-      { label: "MegaPari App", href: "/ru/app/megapari-app" },
-      { label: "Mostbet App", href: "/ru/app/mostbet-app" },
-      { label: "Pin-Up Apk", href: "/ru/app/pin-up-apk-mobile" },
-      { label: "FunPari App", href: "/ru/app/funpari-app" },
+      { label: "1xBet App", href: "/ru/1xbet-app-mobil" },
+      { label: "MegaPari App", href: "/ru/megapari-app" },
+      { label: "Mostbet App", href: "/ru/mostbet-app" },
+      { label: "Pin-Up Apk", href: "/ru/pin-up-apk-mobile" },
+      { label: "FunPari App", href: "/ru/funpari-app" },
     ],
   },
   {
@@ -136,17 +136,17 @@ export const footerLinksRu: NavLink[] = [
 export const footerInfoLinksUz: NavLink[] = [
   { label: "1xBet Kirish", href: "/1xbet-kirish-login" },
   { label: "1xBet Ro'yxatdan O'tish", href: "/1xbet-royxatdan-otish" },
-  { label: "Pin-Up APK", href: "/app/pin-up-apk-mobile" },
-  { label: "1xBet Ilova", href: "/app/1xbet-app-mobil" },
-  { label: "MegaPari Ilova", href: "/app/megapari-app" },
-  { label: "Mostbet Ilova", href: "/app/mostbet-app" },
+  { label: "Pin-Up APK", href: "/pin-up-apk-mobile" },
+  { label: "1xBet Ilova", href: "/1xbet-app-mobil" },
+  { label: "MegaPari Ilova", href: "/megapari-app" },
+  { label: "Mostbet Ilova", href: "/mostbet-app" },
 ];
 
 export const footerInfoLinksRu: NavLink[] = [
   { label: "Вход 1xBet", href: "/ru/1xbet-kirish-login" },
   { label: "Регистрация 1xBet", href: "/ru/1xbet-royxatdan-otish" },
-  { label: "Pin-Up APK", href: "/ru/app/pin-up-apk-mobile" },
-  { label: "1xBet Приложение", href: "/ru/app/1xbet-app-mobil" },
-  { label: "MegaPari Приложение", href: "/ru/app/megapari-app" },
-  { label: "Mostbet Приложение", href: "/ru/app/mostbet-app" },
+  { label: "Pin-Up APK", href: "/ru/pin-up-apk-mobile" },
+  { label: "1xBet Приложение", href: "/ru/1xbet-app-mobil" },
+  { label: "MegaPari Приложение", href: "/ru/megapari-app" },
+  { label: "Mostbet Приложение", href: "/ru/mostbet-app" },
 ];
