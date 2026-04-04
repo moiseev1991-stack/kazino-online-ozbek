@@ -3,6 +3,10 @@ DirectoryIndex index.html
 
 RewriteEngine On
 
+# Redirect old /casino/{slug} URLs to new /{slug} (301 for SEO)
+RewriteRule ^casino/([^/]+)/?$ /$1/ [R=301,L]
+RewriteRule ^ru/casino/([^/]+)/?$ /ru/$1/ [R=301,L]
+
 # Serve pre-rendered HTML files (trailing slash = directory index)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
