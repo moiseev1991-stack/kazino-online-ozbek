@@ -4,4 +4,4 @@
 :HL["/logos/22bet.jpg","image"]
 :HL["/logos/mostbet.webp","image"]
 :HL["/logos/pin-up.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"(uz)","param":null,"prefetchHints":16,"slots":{"children":{"name":"kazino-oyunlari","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"QHhEHh_ZzHn4CA8vI6VYo"}
+0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"(uz)","param":null,"prefetchHints":16,"slots":{"children":{"name":"kazino-oyunlari","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"aYK8X-BnHS_iN43gRYXal"}
