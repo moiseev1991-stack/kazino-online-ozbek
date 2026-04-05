@@ -6,4 +6,4 @@
 :HL["/logos/mostbet.webp","image"]
 :HL["/logos/pin-up.png","image"]
 :HL["/logos/melbet.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"(ru)","param":null,"prefetchHints":16,"slots":{"children":{"name":"ru","param":null,"prefetchHints":0,"slots":{"children":{"name":"igry-kazino","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"K6p8daUipSGc3x0PLqgqP"}
+0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"(ru)","param":null,"prefetchHints":16,"slots":{"children":{"name":"ru","param":null,"prefetchHints":0,"slots":{"children":{"name":"igry-kazino","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"TC2vsN9LuD18CloAGmK0p"}
