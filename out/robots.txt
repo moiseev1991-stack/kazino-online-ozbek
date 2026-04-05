@@ -1,8 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /go/
-Disallow: /api/
-Disallow: /_next/
-
-Host: https://kazino-online-ozbek.com
-Sitemap: https://kazino-online-ozbek.com/sitemap.xml
