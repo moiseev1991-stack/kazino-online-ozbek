@@ -14,6 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description: page.metaDescription,
     alternates: {
       canonical: `${siteSettings.siteUrl}/terms-and-conditions`,
+      languages: { ru: `${siteSettings.siteUrl}/ru/terms-and-conditions` },
     },
   };
 }

@@ -82,22 +82,26 @@ export default function Header() {
   const navGroups = isRu ? navGroupsRu : navGroupsUz;
   const homeHref = isRu ? "/ru" : "/";
 
+  // normalize trailing slash so slugMap lookups work regardless of browser URL
+  const cleanPath = pathname.replace(/\/$/, "") || "/";
+
   // pages where UZ and RU slugs differ — map them explicitly
   const slugMap: Record<string, string> = {
     "/kazino-oyunlari": "/ru/igry-kazino",
     "/ru/igry-kazino": "/kazino-oyunlari",
+    "/ru/kazino-oyunlari": "/kazino-oyunlari",
   };
 
   const uzHref = isRu
-    ? (slugMap[pathname] ?? (pathname.replace(/^\/ru/, "") || "/"))
-    : pathname;
+    ? (slugMap[cleanPath] ?? (cleanPath.replace(/^\/ru/, "") || "/"))
+    : cleanPath;
   const ruHref = isRu
-    ? pathname
-    : (slugMap[pathname] ?? `/ru${pathname === "/" ? "" : pathname}`);
+    ? cleanPath
+    : (slugMap[cleanPath] ?? `/ru${cleanPath === "/" ? "" : cleanPath}`);
 
   const isGroupActive = (group: NavGroup) => {
-    if (group.href && pathname === group.href) return true;
-    return group.dropdown?.some((item) => pathname === item.href) ?? false;
+    if (group.href && cleanPath === group.href) return true;
+    return group.dropdown?.some((item) => cleanPath === item.href) ?? false;
   };
 
   return (

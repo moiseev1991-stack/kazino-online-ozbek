@@ -5,23 +5,20 @@ import { siteSettings } from "@/content/site-settings";
 import LegalPageTemplate from "@/components/shared/LegalPageTemplate";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const page = getLegalPage("privacy-policy");
-  if (!page) {
-    return { title: "Политика конфиденциальности" };
-  }
+  const page = getLegalPage("privacy-policy-ru");
+  if (!page) return { title: "Политика конфиденциальности" };
   return {
     title: page.metaTitle,
     description: page.metaDescription,
     alternates: {
-      canonical: `${siteSettings.siteUrl}/privacy-policy`,
-      languages: { ru: `${siteSettings.siteUrl}/ru/privacy-policy` },
+      canonical: `${siteSettings.siteUrl}/ru/privacy-policy`,
+      languages: { uz: `${siteSettings.siteUrl}/privacy-policy` },
     },
   };
 }
 
-export default function PrivacyPolicyPage() {
-  const page = getLegalPage("privacy-policy");
+export default function RuPrivacyPolicyPage() {
+  const page = getLegalPage("privacy-policy-ru");
   if (!page) notFound();
-
   return <LegalPageTemplate page={page} />;
 }
