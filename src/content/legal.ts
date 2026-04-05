@@ -15,35 +15,35 @@ export interface LegalPage {
 export const legalPages: LegalPage[] = [
   {
     slug: "privacy-policy",
-    title: "Polityka prywatności",
+    title: "Политика конфиденциальности / Maxfiylik Siyosati",
     lastUpdated: "2026-01-01",
-    metaTitle: "Polityka prywatności | Kazino Online O'zbek",
+    metaTitle: "Политика конфиденциальности | Kazino Online O'zbek",
     metaDescription:
-      "Polityka prywatności serwisu Kazino Online. Dowiedz się, jakie dane zbieramy, jak je wykorzystujemy i chronimy Twoje informacje osobowe.",
+      "Политика конфиденциальности сайта Kazino Online. Узнайте, какие данные мы собираем, как используем и защищаем вашу личную информацию.",
     sections: [
       {
-        heading: "Postanowienia ogólne",
-        body: "Niniejsza Polityka prywatności opisuje, w jaki sposób serwis kazino-online-ozbek.com (\"Serwis\") zbiera, wykorzystuje i chroni informacje użytkowników. Korzystając z Serwisu, wyrażasz zgodę na warunki niniejszej Polityki. Serwis ma charakter informacyjny i nie świadczy usług hazardowych bezpośrednio.",
+        heading: "Общие положения / Umumiy qoidalar",
+        body: "Настоящая Политика конфиденциальности описывает, как сайт kazino-online-ozbek.com собирает, использует и защищает информацию пользователей. Используя Сайт, вы соглашаетесь с условиями данной Политики. Сайт носит информационный характер и не предоставляет услуги азартных игр напрямую.\n\nUshbu Maxfiylik Siyosati kazino-online-ozbek.com sayti foydalanuvchilar haqida ma'lumot qanday to'planishini, ishlatilishini va himoyalanishini tavsiflaydi. Saytdan foydalanib, siz ushbu Siyosat shartlariga rozilik bildirasiz.",
       },
       {
-        heading: "Zbieranie danych",
-        body: "Zbieramy minimalną ilość danych niezbędnych do prawidłowego funkcjonowania Serwisu: adres IP, typ i wersja przeglądarki, system operacyjny, odwiedzane strony oraz czas wizyty. Dane osobowe (imię, adres e-mail) są zbierane wyłącznie w przypadku dobrowolnego kontaktu za pośrednictwem formularza kontaktowego.",
+        heading: "Сбор данных / Ma'lumot to'plash",
+        body: "Мы собираем минимальный объём данных, необходимых для корректной работы Сайта: IP-адрес, тип и версия браузера, операционная система, страницы посещения и время визита. Персональные данные (имя, e-mail) собираются только в случае добровольного обращения через контактную форму.\n\nBiz Saytning to'g'ri ishlashi uchun zarur bo'lgan minimal ma'lumotlarni to'playmiz: IP-manzil, brauzer turi va versiyasi, operatsion tizim, tashrif sahifalari va tashrif vaqti. Shaxsiy ma'lumotlar (ism, e-mail) faqat aloqa formasi orqali ixtiyoriy murojaat qilingan taqdirda to'planadi.",
       },
       {
-        heading: "Pliki cookie",
-        body: "Serwis wykorzystuje techniczne i analityczne pliki cookie w celu poprawy doświadczeń użytkownika oraz analizy ruchu. Techniczne pliki cookie są niezbędne do działania Serwisu i nie mogą zostać wyłączone. Analityczne pliki cookie możesz wyłączyć w ustawieniach przeglądarki. Kontynuując korzystanie z Serwisu, wyrażasz zgodę na stosowanie plików cookie.",
+        heading: "Файлы cookie / Cookie fayllar",
+        body: "Сайт использует технические и аналитические cookie-файлы для улучшения пользовательского опыта и анализа трафика. Технические cookie необходимы для работы Сайта и не могут быть отключены. Аналитические cookie вы можете отключить в настройках браузера.\n\nSayt foydalanuvchi tajribasini yaxshilash va trafikni tahlil qilish uchun texnik va analitik cookie-fayllardan foydalanadi. Texnik cookie-lar Saytning ishlashi uchun zarur va o'chirib bo'lmaydi. Analitik cookie-larni brauzer sozlamalarida o'chirishingiz mumkin.",
       },
       {
-        heading: "Usługi zewnętrzne",
-        body: "Serwis korzysta z Google Analytics i podobnych narzędzi analitycznych w celu badania ruchu i ulepszania treści. Usługi te zbierają zanonimizowane statystyki zgodnie z własną polityką prywatności. Ponadto Serwis zawiera linki partnerskie do kasyn i bukmacherów; korzystanie z nich podlega polityce prywatności odpowiednich operatorów.",
+        heading: "Сторонние сервисы / Uchinchi tomon xizmatlari",
+        body: "Сайт использует сервисы Google Analytics и аналогичные инструменты веб-аналитики. Кроме того, Сайт содержит партнёрские ссылки на казино и букмекеров; переход по ним регулируется политикой конфиденциальности соответствующих операторов.\n\nSayt Google Analytics va shunga o'xshash veb-tahlil vositalaridan foydalanadi. Bundan tashqari, Sayt kazino va bukmekerlarga sheriklik havolalarini o'z ichiga oladi; ulardan foydalanish tegishli operatorlarning maxfiylik siyosati bilan tartibga solinadi.",
       },
       {
-        heading: "Ochrona danych",
-        body: "Do ochrony przesyłanych danych stosowane jest szyfrowanie TLS/SSL (HTTPS). Nie przekazujemy ani nie sprzedajemy danych osobowych użytkowników osobom trzecim, z wyjątkiem przypadków przewidzianych przez prawo.",
+        heading: "Защита данных / Ma'lumot xavfsizligi",
+        body: "Для защиты передаваемых данных применяется шифрование по протоколу TLS/SSL (HTTPS). Мы не передаём и не продаём персональные данные пользователей третьим лицам, за исключением случаев, предусмотренных законодательством.\n\nUzatiladigan ma'lumotlarni himoya qilish uchun TLS/SSL (HTTPS) protokoli bo'yicha shifrlash qo'llaniladi. Biz foydalanuvchilarning shaxsiy ma'lumotlarini qonunda nazarda tutilgan hollar bundan mustasno, uchinchi shaxslarga o'tkazmaymiz yoki sotmaymiz.",
       },
       {
-        heading: "Prawa użytkowników",
-        body: "Masz prawo żądać dostępu do swoich danych, ich poprawienia lub usunięcia, wysyłając zapytanie za pośrednictwem strony kontaktowej. Rozpatrzymy Twoje zgłoszenie w rozsądnym terminie. Niniejsza Polityka prywatności może być aktualizowana; aktualna wersja jest zawsze dostępna na tej stronie.",
+        heading: "Права пользователей / Foydalanuvchi huquqlari",
+        body: "Вы вправе запросить доступ к своим данным, их исправление или удаление через страницу контактов. Настоящая Политика конфиденциальности может обновляться; актуальная версия всегда доступна на этой странице.\n\nSiz aloqa sahifasi orqali ma'lumotlaringizga kirish, ularni tuzatish yoki o'chirish so'rovini yuborishingiz mumkin. Ushbu Maxfiylik Siyosati yangilanishi mumkin; dolzarb versiyasi har doim ushbu sahifada mavjud.",
       },
     ],
   },
