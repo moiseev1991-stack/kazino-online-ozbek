@@ -13,8 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${BASE}/ru`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE}/casinos`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${BASE}/ru/casinos`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${BASE}/kazino-oyunlari`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/ru/igry-kazino`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/ruletka`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },

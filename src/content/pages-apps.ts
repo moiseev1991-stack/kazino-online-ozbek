@@ -11,6 +11,8 @@ export interface AppPage {
   steps: string[];
   features: string[];
   body: string;
+  bodyHtmlUz?: string;
+  bodyHtmlRu?: string;
   ctaUrl?: string;
   metaTitle: string;
   metaDescription: string;
@@ -213,6 +215,8 @@ export const appPages: AppPage[] = [
       "24/7 qo'llab-quvvatlash",
     ],
     body: "888Starz Android ilovasi sizga istalgan joyda sport stavkalarini qo'yish va kazino o'yinlarini o'ynash imkonini beradi. Rasmiy APK faylni 888starzuz.bet saytidan bepul yuklab oling.",
+    bodyHtmlUz: `888Starz Android ilovasi sizga istalgan joyda sport stavkalarini qo'yish va kazino o'yinlarini o'ynash imkonini beradi. Rasmiy APK faylni <a href="https://888starzuz.bet/apk/" rel="nofollow noopener" target="_blank">888starz yuklab oling</a> — bu havola orqali eng so'nggi versiyani oling.`,
+    bodyHtmlRu: `Официальное приложение 888Starz для Android доступно для скачивания по ссылке: <a href="https://888starzuz.bet/apk/" rel="nofollow noopener" target="_blank">888starz скачать</a>. Устанавливайте только с официального источника.`,
     metaTitle: "888Starz APK Yuklab Olish 2026 | Android Ilovasi",
     metaDescription: "888Starz Casino Android APK faylini yuklab oling. O'rnatish bo'yicha to'liq qo'llanma. Bepul, rasmiy versiya. Sport stavkalari va kazino bitta ilovada.",
   },

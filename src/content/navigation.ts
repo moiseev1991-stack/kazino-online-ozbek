@@ -20,7 +20,6 @@ export const navGroupsUz: NavGroup[] = [
   {
     label: "Kazino",
     dropdown: [
-      { label: "Barcha kazinolar", href: "/casinos" },
       { label: "Mostbet", href: "/mostbet" },
       { label: "Melbet", href: "/melbet" },
       { label: "Pin-Up", href: "/pin-up" },
@@ -45,8 +44,8 @@ export const navGroupsUz: NavGroup[] = [
     label: "Kazino Apk",
     dropdown: [
       { label: "Barcha ilovalar", href: "/apps" },
+      { label: "888Starz Apk", href: "/888starz-apk" },
       { label: "1xBet App", href: "/1xbet-app-mobil" },
-      { label: "888Starz Apk", href: "/pin-up-apk-mobile" },
       { label: "MegaPari App", href: "/megapari-app" },
       { label: "Mostbet App", href: "/mostbet-app" },
       { label: "Pin-Up Apk", href: "/pin-up-apk-mobile" },
@@ -68,7 +67,6 @@ export const navGroupsRu: NavGroup[] = [
   {
     label: "Казино",
     dropdown: [
-      { label: "Все казино", href: "/ru/casinos" },
       { label: "Mostbet", href: "/ru/mostbet" },
       { label: "Melbet", href: "/ru/melbet" },
       { label: "Pin-Up", href: "/ru/pin-up" },
@@ -93,6 +91,7 @@ export const navGroupsRu: NavGroup[] = [
     label: "Казино Apk",
     dropdown: [
       { label: "Все приложения", href: "/ru/apps" },
+      { label: "888Starz Apk", href: "/ru/888starz-apk" },
       { label: "1xBet App", href: "/ru/1xbet-app-mobil" },
       { label: "MegaPari App", href: "/ru/megapari-app" },
       { label: "Mostbet App", href: "/ru/mostbet-app" },
@@ -113,7 +112,6 @@ export const navGroupsRu: NavGroup[] = [
 
 export const footerLinksUz: NavLink[] = [
   { label: "Bosh sahifa", href: "/" },
-  { label: "Barcha Kazinolar", href: "/casinos" },
   { label: "Kazino O'yinlari", href: "/kazino-oyunlari" },
   { label: "Ruletka", href: "/ruletka" },
   { label: "Mobil Ilovalar", href: "/apps" },
@@ -124,7 +122,6 @@ export const footerLinksUz: NavLink[] = [
 
 export const footerLinksRu: NavLink[] = [
   { label: "Главная", href: "/ru" },
-  { label: "Все казино", href: "/ru/casinos" },
   { label: "Игры казино", href: "/ru/igry-kazino" },
   { label: "Рулетка", href: "/ru/ruletka" },
   { label: "Мобильные приложения", href: "/ru/apps" },

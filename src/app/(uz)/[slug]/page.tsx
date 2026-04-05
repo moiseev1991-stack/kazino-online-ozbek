@@ -82,8 +82,7 @@ export default async function CasinoOrAppPage({ params }: Props) {
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Bosh sahifa", item: siteSettings.siteUrl },
-        { "@type": "ListItem", position: 2, name: "Kazinolar", item: `${siteSettings.siteUrl}/casinos` },
-        { "@type": "ListItem", position: 3, name: brand.name, item: `${siteSettings.siteUrl}/${brand.slug}` },
+        { "@type": "ListItem", position: 2, name: brand.name, item: `${siteSettings.siteUrl}/${brand.slug}` },
       ],
     };
 
@@ -99,8 +98,6 @@ export default async function CasinoOrAppPage({ params }: Props) {
             <div className="bg-white py-6 px-6 sm:px-10">
               <nav className="text-sm text-gray-500 mb-4">
                 <a href="/" className="hover:text-pink-600">Bosh sahifa</a>
-                <span className="mx-2">›</span>
-                <a href="/casinos" className="hover:text-pink-600">Kazinolar</a>
                 <span className="mx-2">›</span>
                 <span className="text-gray-800 font-medium">{brand.name}</span>
               </nav>
@@ -238,7 +235,10 @@ export default async function CasinoOrAppPage({ params }: Props) {
         </div>
 
         <div className="bg-gray-50 rounded-xl p-6 mb-8">
-          <p className="text-gray-600 leading-relaxed">{page.body}</p>
+          {page.bodyHtmlUz
+            ? <div className="text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: page.bodyHtmlUz }} />
+            : <p className="text-gray-600 leading-relaxed">{page.body}</p>
+          }
         </div>
 
         {appBrand && (
