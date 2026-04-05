@@ -101,7 +101,7 @@ export default function RuIgryKazinoPage() {
 
           <div className="mb-4 flex items-center justify-between">
             <h2 className="text-xl font-bold text-gray-900">Лучшие казино для игр</h2>
-            <Link href="/ru/casinos" className="text-sm text-pink-600 hover:text-pink-700">
+            <Link href="/ru/igry-kazino" className="text-sm text-pink-600 hover:text-pink-700">
               Все казино →
             </Link>
           </div>
