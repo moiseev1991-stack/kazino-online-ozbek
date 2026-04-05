@@ -40,6 +40,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "yY_Ako882_7lSnF_Mz27ZNM1kEzsZOPBQKiuJcaDEU4",
+  },
 };
 
 export default function UzLayout({
