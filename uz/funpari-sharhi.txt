@@ -1,0 +1,333 @@
+**Title:** FunPari — Kirish, Onlayn kazino sharhi | Rasmiy 2026
+
+ **Description:** FunPari sharhi 2026: kirish va ro‘yxatdan o‘tish, Android APK, iOS/PC kirish, slotlar va live tikish, RTP, to‘lovlar (UZCARD/HUMO, Visa), xavfsizlik va taqqoslash.
+
+# FunPari sharhi: kirish, APK, o‘yinlar va to‘lovlar
+
+Toshkent foydalanuvchilari uchun 2026-yil yangilangan qo‘llanma: FunPari’ga kirish, ilovani yuklab olish, o‘yinlar/RTP, to‘lov kanallari, xavfsizlik va raqiblar bilan taqqoslash bir sahifada.
+
+## FunPari kirish va ro‘yxatdan o‘tish: xavfsiz yo‘riqnoma
+
+Toshkent foydalanuvchilari uchun kirish jarayoni odatda uch yo‘l bilan amalga oshiriladi: email, telefon raqami (OTP) yoki ijtimoiy tarmoq hisoblari orqali. Aniq variantlar platforma sozlamalariga bog‘liq bo‘lishi mumkin. Xavfsizlik nuqtai nazaridan domenni (HTTPS, sertifikat), kirish joyini (“Kirish/Log in” sahifasi) va rasmiy bildirishnomalarni tekshirib, keyin parol/OTP kiritish tavsiya etiladi. Shaxsiy ma’lumotlaringizni faqat rasmiy sahifalarda kiriting, fishing sahifalarga hushyor bo‘ling.
+
+### Qanday kiraman: email, telefon yoki ijtimoiy tarmoq?
+
+Kirish kanali tanlashda qulaylik, zaxira tiklash ssenariylari va xavfsizlik omillarini hisobga oling. Quyidagi solishtirma jadval umumiy amaliyotni tushunishga yordam beradi (aniq mavjudlik platformaga bog‘liq):
+<table><thead><tr><th>Kirish usuli</th><th>Asosiy jarayon</th><th>Qayta tiklash ssenariysi</th><th>Xavfsizlik omili</th><th>Qo‘shimcha eslatmalar</th></tr></thead><tbody><tr><td>Email + parol</td><td>Email manzilni kiritish, parol bilan autentifikatsiya</td><td>“Parolni unutdingizmi?” orqali emailga yuborilgan havola</td><td>Parol murakkabligi va 2FA bilan mustahkamlanadi</td><td>Pochtada fishingga e’tibor bering; rasmiy domenni tekshiring</td></tr><tr><td>Telefon raqami (OTP)</td><td>SMS/qo‘ng‘iroq orqali bir martalik kod (odatda 6 xonali)</td><td>Raqamga OTP yuboriladi; raqamga kirish yo‘qolsa – qo‘llab-quvvatlash</td><td>SIM almashtirish (SIM-swap) xavfiga sezgir</td><td>Hisobga TOTP 2FA qo‘shish tavsiya etiladi</td></tr><tr><td>Ijtimoiy tarmoq (SSO)</td><td>Google/Apple/Facebook orqali tasdiqlash va bog‘lash</td><td>Asosiy provayder hisobini tiklash orqali kirish</td><td>Provayderdagi 2FA darajasiga bog‘liq</td><td>Bir nechta usulni zaxira sifatida bog‘lab qo‘ying</td></tr></tbody></table>
+
+Amaliy tavsiyalar: parolni kalit menejeri yordamida yarating (uzun, noyob), ijtimoiy tarmoq SSO’dan foydalansangiz, o‘sha xizmatda ham 2FA yoqilgan bo‘lsin. Telefon-raqamga bog‘lash qulay, biroq SIM-swap xatarini kamaytirish uchun operatoringizdagi qo‘shimcha himoya (PIN/PIN2, SIM blok) xizmatlarini yoqing.
+
+### 2FA va tasdiqlash kodi: qachon va qanday yoqiladi?
+
+Ikki faktorli himoya (2FA) hisobga kirishda paroldan tashqari ikkinchi omil talab qiladi. Agar platforma 2FA’ni qo‘llab-quvvatlasa, odatiy jarayon quyidagicha bo‘ladi:
+
+- Hisob sozlamalariga kiring → “Xavfsizlik” yoki “Ikki faktorli himoya” bo‘limini oching.
+Usulni tanlang:
+ 
+- TOTP autentifikator ilovasi (tavsiya etiladi): Google Authenticator yoki Microsoft Authenticator.
+- SMS-kod: tezkor, ammo SIM-swap xavfi yuqoriroq.
+- Zaxira kodlar: internet yoki qurilma bo‘lmasa ham kirish uchun offline kodlar.
+
+TOTP yoqish:
+ 
+- Saytdagi QR-kodni autentifikator ilovasi bilan skaner qiling.
+- Ilovada hosil bo‘lgan vaqtga sezgir 6 xonali kodni kiriting.
+- Zaxira kodlarni xavfsiz joyda saqlang (offline).
+
+- Qurilmalarni boshqarish: faqat foydalanayotgan qurilmalar ro‘yxatda qolsin, nomalum qurilmalarni o‘chiring.
+
+- Google Authenticator haqida: [Google yordam markazi](https://support.google.com/accounts/answer/1066447)
+- Microsoft Authenticator haqida: [Microsoft yordam sahifasi](https://support.microsoft.com/account-billing/microsoft-authenticator-ilovasi-haqida)
+
+Qachon yoqish kerak? Hisob yaratgandan so‘ng darhol. Qachon yangilash kerak? Qurilmani almashtirganda, shubhali faoliyat kuzatilsa yoki zaxira kodlar oshkor bo‘lganda. TOTP vaqt sinxronizatsiyasi buzilganda (kodi noto‘g‘ri chiqsa) qurilma vaqtini “avtomatik”ga o‘tkazing.
+
+### Muammo bo‘lsa nima qilaman: parol tiklash va blokdan chiqish
+
+Kirish muammolari ko‘pincha noto‘g‘ri parol, 2FA kodi, bloklangan sessiya yoki domen xatosi tufayli yuz beradi. Quyidagi bosqichlar muammoni tezda hal qilishga yordam beradi:
+
+“Parolni unutdingizmi?” funksiyasi:
+ 
+- Email usuli: qayta tiklash havolasini faqat rasmiy domenli xat orqali oching.
+- Telefon usuli: SMS-kodni kiriting; SMS kechiksa, qabul qilishni takrorlashdan oldin bir necha daqiqa kuting.
+
+2FA kodi ishlamasa:
+ 
+- TOTP uchun vaqt sinxronizatsiyasini tekshiring; ilovani qayta ishga tushiring.
+- Zaxira kodlardan birini ishlating; qolganini yangilang.
+
+Hisob bloklangan bo‘lsa:
+ 
+- Ko‘p urinish tufayli vaqtinchalik blok — odatda kutish muddati o‘tishi bilan ochiladi.
+- Doimiy blok yoki xavfsizlik tekshiruvi — KYC so‘ralishi mumkin (pasport/shaxsni tasdiqlovchi hujjat, selfi, karta egalik tasdig‘i).
+
+Texnik tekshiruvlar:
+ 
+- Domen/HTTPS va brauzer keshini tozalang, boshqa brauzer yoki inkognito rejimni sinab ko‘ring.
+- IP/VPN: ayrim holatlarda VPN sabab xavfsizlik filtrlari ishga tushadi — vaqtincha o‘chirib ko‘ring.
+
+- Qo‘llab-quvvatlashga murojaat qilishdan oldin: ro‘yxatdan o‘tgan email/telefon, oxirgi kirish vaqti, xatolik skrinshoti, KYC hujjatlari (agar so‘ralgan bo‘lsa)ni tayyorlab qo‘ying.
+- Qo‘shma xavfsizlik: parolni yangilang, 2FA’ni qayta sozlang, noma’lum qurilma sessiyalarini tozalang.
+
+## FunPari ilova va APK: yuklab olish va moslik
+
+Ilovani yuklab olishda xavfsizlik birinchi o‘rinda: rasmiy domenni tekshirish, HTTPS sertifikatiga e’tibor berish, APK imzosini (signature) va fayl yaxlitligini tekshirish zarur. Android’da haqiqiy pulga qimor ilovalari rasmiy do‘konda faqat alohida siyosat va litsenziya talablari bajarilganda taqdim etiladi; ko‘p hollarda ishlab chiquvchi ilovani rasmiy saytida APK ko‘rinishida tarqatadi. iOS’da esa odatdagi yo‘l — App Store orqali o‘rnatish; kompyuterda brauzer orqali veb-versiyadan foydalaniladi.
+
+### Android uchun FunPari APK’ni qayerdan xavfsiz yuklab olaman?
+
+Android’da xavfsiz yuklab olish uchun rasmiy manbani aniqlang, fayl imzosini tekshiring va qurilmangizni himoyalang. Quyidagi nazorat ro‘yxati umumiy xavfsizlik amaliyotlariga asoslanadi:
+<table><thead><tr><th>Tekshirish punkti</th><th>Android’da qanday tekshirasiz</th><th>Nega muhim</th></tr></thead><tbody><tr><td>Rasmiy domen va HTTPS</td><td>Manzil satrida “https://”, qulfsimon belgini va domen imlosini tekshiring; punycode ko‘rinishlari (“xn--”)ga e’tibor bering</td><td>Fishing va klon saytlardan himoya</td></tr><tr><td>Google Play siyosati</td><td>Qimor ilovalari bo‘yicha rasmiy qoidalarni ko‘rib chiqing: <a href="https://support.google.com/googleplay/android-developer/answer/9877011">Google Play siyosati</a></td><td>Ilova nega Play’da yo‘qligini tushunish (mamlakat/litsenziya cheklovlari)</td></tr><tr><td>APK imzosi (signature)</td><td>“apksigner verify --print-certs file.apk” yoki Android Studio “APK Analyzer” orqali sertifikat SHA‑256 izini tekshiring</td><td>Fayl uchinchi shaxs tomonidan o‘zgartirilmaganini tasdiqlash</td></tr><tr><td>Fayl yaxlitligi (hash)</td><td>Ishlab chiquvchi bergan SHA‑256 qiymatini mahalliy hisoblangan hash bilan solishtiring</td><td>Yuklab olishda buzilish yoki almashtirishni aniqlash</td></tr><tr><td>Play Protect va skan</td><td>Google Play Protect yoqilganini tekshiring: <a href="https://support.google.com/googleplay/answer/2812853">Play Protect</a></td><td>Zararli dasturlardan qo‘shimcha himoya</td></tr><tr><td>Paket nomi va ruxsatlar</td><td>O‘rnatishdan oldin paket nomi mosligini va ilova so‘rayotgan ruxsatlarni ko‘rib chiqing</td><td>Keraksiz ruxsatlar — xavfsizlikka xavf</td></tr></tbody></table>
+
+Qo‘shimcha maslahatlar: “Noma’lum manbalardan o‘rnatish” funksiyasini faqat yuklab olish jarayonida vaqtincha yoqing va keyin o‘chirib qo‘ying; ilovaga berilgan ruxsatlarni “Sozlamalar → Ilovalar” bo‘limida minimal darajaga tushiring. APK’ni uchinchi tomon “mod” yoki “patched” variantlaridan yuklamang — ular xavfsizlikni buzishi mumkin.
+
+### iOS va kompyuterda qanday kirish mumkin?
+
+iOS’da tavsiya etilgan yagona yo‘l — App Store orqali o‘rnatish va rasmiy ishlab chiquvchi nomi, sharhlar hamda maxfiylik siyosatini tekshirish. Mintaqaviy cheklovlar bo‘lishi mumkin; App Store profilida mamlakat sozlamalarini tekshiring. Kompyuterda esa zamonaviy brauzerlar (Chrome, Edge, Firefox, Safari) yordamida veb-versiyadan foydalaniladi; ba’zi brauzerlarda saytni PWA (Progressive Web App) sifatida “o‘rnatish” imkoniyati bor.
+
+- iOS App Store’dan yuklab olish bo‘yicha rasmiy yo‘riqnoma: [Apple qo‘llanmasi](https://support.apple.com/guide/iphone/download-apps-iph3e2e2cdc/ios)
+- PWA o‘rnatish (agar sayt qo‘llab-quvvatlasa): brauzer menyusidan “Install app”/“Add to Home screen” variantini tanlang.
+- Kompyuterda xavfsizlik: HTTPS, domen imlosi, brauzer yangilanishlari va faqat rasmiy havolalardan foydalanish.
+
+iOS’da App Store’dan tashqari manbalardan o‘rnatish (enterprise profillari, noma’lum sertifikatlar) tavsiya etilmaydi. Kompyuterda .exe yoki .pkg fayllarni noma’lum saytlardan yuklab olmang; veb-ilovadan foydalanish odatda yetarli.
+
+### Nega domen va imzoni tekshirish muhim?
+
+Domen va ilova imzosi — foydalanuvchi ishonchini va qurilma xavfsizligini ta’minlaydigan ikki asosiy qatlam. Domen tekshiruvi fishingni bartaraf etadi, imzo esa APK faylining uchinchi shaxslar tomonidan o‘zgartirilmaganini tasdiqlaydi.
+
+Domen xavfsizligi:
+ 
+- HTTPS/TLS va amal qiladigan sertifikat — ma’lumotlar shifrlanadi.
+- Punycode (masalan, “xn--” bilan boshlanuvchi) va imloga yaqin klon domenlar — yuqori xavf belgisi.
+- “Kontaktlar”/“Yordam” bo‘limidagi rasmiy havolalar ijtimoiy tarmoqlardagi rasmiy profillar bilan mos bo‘lishi kerak.
+
+APK imzosi va yaxlitligi:
+ 
+- Bir xil ishlab chiquvchi imzosi yangilanishlarda saqlanadi; kutilmagan o‘zgarish — ogohlantirish.
+- SHA‑256 hash mos bo‘lmasa, fayl almashtirilgan bo‘lishi mumkin.
+- “apksigner verify --print-certs” orqali sertifikat izini (fingerprint) tekshirish — standart amaliyot.
+
+Foydalanuvchi gigiyenasi:
+ 
+- Parollarni qayta ishlatmang, 2FA yoqing.
+- Ilova ruxsatlarini minimal darajada saqlang; keraksiz ruxsatlarni rad eting.
+- Qurilmani doimiy yangilab boring; xavfsizlik yamoqlari muhim.
+
+Xulosa: rasmiy domen + haqiqiy sertifikat + tekshirilgan APK imzosi kombinatsiyasi eng xavfsiz o‘rnatish jarayonini ta’minlaydi. Shubhali belgilarni ko‘rsangiz, yuklab olishni to‘xtating va faqat ishonchli, rasmiy manbalardan foydalaning.
+
+## O‘yinlar va bozorlar: slotlar, live kazino, sport
+
+Ushbu bo‘limda uchta asosiy mavzuni yoritamiz: RTP (o‘yinchi qaytimi) tushunchasi va yuqori RTP beradigan klassik o‘yinlar, live (jonli) bozorlaridagi koeffitsientlar va keshout mexanizmi, hamda keng tarqalgan provayderlar va janrlar. Ma’lumotlar umumiy sanoat standartlariga tayanadi; muayyan platformadagi mavjud o‘yinlar va qoidalar operator siyosatiga bog‘liq bo‘ladi.
+
+### RTP nima va qaysi o‘yinlarda yuqori?
+
+RTP (Return to Player) — o‘yin uzoq muddatda nazariy jihatdan o‘yinchiga qaytaradigan foiz ulushidir. Masalan, 97.30% RTP — juda ko‘p aylantirish/partiyalar kesimida o‘rtacha 100 birlikdan 97.30 birligi qaytishi kutilishini anglatadi. RTP uy afzalligi (house edge) bilan bog‘liq: RTP = 100% − house edge. Quyidagi jadval sanoatda keng tanilgan “standart variant” qoidalari uchun aniq RTP ko‘rsatkichlarini keltiradi:
+<table><thead><tr><th>O‘yin (standart varianti)</th><th>Asosiy qoidalar</th><th>Uy afzalligi</th><th>RTP (nazariy)</th><th>Eslatma</th></tr></thead><tbody><tr><td>Yevropa ruleti (European)</td><td>1 ta nol (0)</td><td>2.70%</td><td>97.30%</td><td>Fransuz qoidalaridagi “La Partage” faqat juft/toq kabi pulga teng garovlarga taalluqli</td></tr><tr><td>Amerika ruleti (American)</td><td>2 ta nol (0 va 00)</td><td>5.26%</td><td>94.74%</td><td>Ikki nol sabab uy afzalligi yuqoriroq</td></tr><tr><td>Bakkara — Banker garovi</td><td>Standart komissiya</td><td>1.06%</td><td>98.94%</td><td>Odatda eng qulay garov (komissiya hisobga olingan)</td></tr><tr><td>Bakkara — Player garovi</td><td>Standart qoidalar</td><td>1.24%</td><td>98.76%</td><td>Banker’ga nisbatan biroz pastroq RTP</td></tr><tr><td>Bakkara — Tie (durrang)</td><td>Standart koeffitsient</td><td>14.36%</td><td>85.64%</td><td>Eng noqulay garov varianti</td></tr><tr><td>Krups (Craps) — Pass Line</td><td>Standart stol qoidalari</td><td>1.41%</td><td>98.59%</td><td>Odds garovlari uy afzalligini oshirmaydi (0%), ammo asosiy garov saqlanadi</td></tr><tr><td>Blackjack (6 ta koloda)</td><td>S17, 3:2, DAS, surrender yo‘q</td><td>≈0.46%</td><td>≈99.54%</td><td>Optimal strategiya talab etiladi; qoida o‘zgarishi natijani o‘zgartiradi</td></tr><tr><td>Video Poker — Jacks or Better</td><td>9/6 to‘lov jadvali</td><td>≈0.46%</td><td>≈99.54%</td><td>Optimal strategiya bilan; boshqa paytable’larda pastroq bo‘lishi mumkin</td></tr></tbody></table>
+
+Yuqori RTP izlayotganlar odatda quyidagilarga e’tibor beradi: optimal qoida to‘plamli blackjack va 9/6 Jacks or Better video poker; bakkarada Banker garovi; ruletda esa Yevropa varianti. Slotlarda RTP provayder konfiguratsiyasiga bog‘liq bo‘lib, ko‘pincha 94–97% oralig‘ida (aniq nom/versiyaga ko‘ra) bo‘ladi; RTP yuqori bo‘lgani bilan natija qisqa muddatda o‘zgaruvchan (volatillik) bo‘lishi mumkin.
+
+### Live koeffitsientlar va keshout qanday ishlaydi?
+
+Live (jonli) bozorlar voqea davomida real vaqt ma’lumotlari asosida narxlanadi. Odds (koeffitsient) — implitsit ehtimollik va marja yig‘indisi; dinamik ravishda yangilanadi, “suspend” (vaqtincha yopish) esa xavfli lahzalarda (gol, penalti, qizil karta, set/reyting o‘zgarishi) narxning adolatli qayta hisoblanishi uchun qo‘llanadi.
+
+Koeffitsientlar:
+ 
+- Implitsit ehtimollik: p = 1/odds (yevropa formatida), ammo marja tufayli barcha natijalar yig‘indisi 100%+ bo‘ladi.
+- Manbalar: ma’lumot feed’lari, model (Elo, Poisson, xG/xThreat), treyder nazorati.
+- Keçikish (delay): “bet delay” qoidasi arbitraj va “courtsiding” xavfiga qarshi qo‘llanadi.
+
+Keshout (cash out):
+ 
+- Turi: to‘liq, qisman (stake’ning bir qismi), avtomatik (maqsad foyda/zarar triggerlari).
+- Baholash: joriy “adolatli” odds va platforma marjasi asosida pul qiymati; odatda kichik chegirma qo‘llanadi.
+- Qachon foydali: volatillik yuqori bo‘lganda riskni qisqartirish yoki pozitsiyani erta yopish uchun.
+- Cheklovlar: bozor “suspend” holatida yoki limitlar to‘lganda taklif o‘zgarishi/yopilishi mumkin.
+
+Amaliy maslahatlar:
+ 
+- Likvid bozorlar (yirik ligalar) odatda tor marja va barqarorroq keshout narxiga ega.
+- Yuqori bozor tebranishida kechikish va “suspend” chastotasi oshadi — narx tez o‘zgaradi.
+- Keshout “qulay chiqish” bo‘lishi mumkin, biroq uzoq muddatda marja sababdan matematik jihatdan xarajatli bo‘lishi ehtimoli bor.
+
+### Qaysi provayderlar va janrlar mavjud?
+
+Keng sanoat amaliyotida RNG (slоt va stol o‘yinlari) hamda live kazino segmentini turli provayderlar taqdim etadi. Aniq mavjudlik operatorga bog‘liq, ammo quyidagilar bozorda keng tarqalgan:
+
+Live kazino provayderlari:
+ 
+- Evolution — live rulet, blackjack, baccarat, game show’lar (Crazy Time, Lightning Roulette va b.).
+- Playtech — live stol o‘yinlari va game show formatlari.
+- Pragmatic Play Live — live stol o‘yinlari va tezkor shoular.
+
+RNG/slot provayderlari:
+ 
+- Pragmatic Play, Play’n GO, NetEnt, Games Global (sobiq Microgaming), Yggdrasil, Quickspin, Push Gaming, Nolimit City.
+- Video poker/stol RNG: iSoftBet, Habanero va boshqa studiyalar.
+
+Janrlar:
+ 
+- Video slotlar: klassik, Megaways, Hold &amp; Win, klaster to‘lovlari, bonus sotib olish (Buy Feature) mavjud bo‘lishi mumkin.
+- Jackpot slotlar: tarmoq (masalan, Mega Moolah, Divine Fortune) yoki mahalliy jackpot mexanizmlari.
+- Stol o‘yinlari: rulet (Yevropa/Amerika), blackjack, baccarat, craps, poker variantlari (Casino Hold’em, Three Card Poker).
+- Game show va tezkor o‘yinlar: Crazy Time, Monopoly Live, Lightning Dice, shuningdek “crash” turkumiga kiruvchi o‘yinlar (Aviator va b.).
+
+Provayder va janr tanlashda RTP oshkorligi, qoidalar shaffofligi, o‘yin volatilligi va shaxsiy byudjet boshqaruvi muhim. Live o‘yinlarda translyatsiya sifati, dilerlar me’yorlari va studiya infratuzilmasi ham tajribaga bevosita ta’sir qiladi.
+
+## To‘lovlar va xavfsizlik: UZCARD/HUMO, Visa, kripto
+
+Toshkentdagi foydalanuvchilar uchun to‘lovlar uch yo‘nalishda uchraydi: mahalliy kartalar (UZCARD/HUMO), xalqaro kartalar (Visa/Mastercard) va kriptovalyuta. Har bir usulning limiti, komissiyasi va valyuta kursi amaliyoti turlicha bo‘lishi mumkin. Quyida e’tibor berish kerak bo‘lgan asosiy omillar, xalqaro xavfsizlik standartlari (SSL/TLS, 3‑D Secure, PCI DSS) va KYC (mijozni tekshirish) jarayonlari haqida aniq, faktlarga tayanadigan yo‘riqnoma keltiriladi.
+
+### Limitlar, komissiyalar va kurs: nimalarga e’tibor beramiz?
+
+Depozit/yechib olish limitlari, komissiyalar va valyuta kursi yakuniy xarajatingizni bevosita belgilaydi. Aniq miqdorlar operator siyosati va tanlangan to‘lov kanaliga bog‘liq, shuning uchun “To‘lovlar” yoki “Qoidalar” bo‘limidagi jadval va bandlarni diqqat bilan o‘qing. Valyuta almashinuvida (masalan, UZS → USD/EUR) bank kursi va ehtimoliy DCC (Dynamic Currency Conversion) qo‘llanishi mumkin.
+
+Limitlar:
+ 
+- Minimal/maksimal depozit va yechib olish alohida ko‘rsatiladi; ko‘pincha verifikatsiya darajasiga bog‘liq.
+- Ishlov berish vaqti (processing time) metodga ko‘ra farq qiladi: kartalar odatda tezroq, bank o‘tkazmalari uzoqroq, kriptoda esa tarmoq yuklanishiga bog‘liq.
+
+Komissiyalar:
+ 
+- Karta to‘lovlarida komissiya odatda akseptant/processor darajasida shakllanadi; ayrim hollarda foydalanuvchiga o‘tkazilishi mumkin.
+- Kriptoda on-chain komissiya (gazonarx) majburiy bo‘lib, tarmoq (masalan, Bitcoin, Ethereum) holatiga qarab dinamik o‘zgaradi.
+- Bank o‘tkazmasida banklararo/kross‑bordyer to‘lovlarida alohida tariflar amal qiladi.
+
+Kurs va konversiya:
+ 
+- Karta valyutasi hisob‑kitob valyutasidan farq qilsa, emitent/processor kursi qo‘llanadi.
+- Rasmiy ma’lumotlar uchun: [O‘zbekiston Respublikasi Markaziy banki](https://cbu.uz/uz/).
+- DCC qo‘llansa, terminal yoki sahifada taklif qilingan kursni bank kursi bilan solishtirib ko‘ring.
+<table><thead><tr><th>Atama</th><th>Faktli ta’rif</th><th>Qaerdan tekshirasiz</th></tr></thead><tbody><tr><td>Minimal/maksimal limit</td><td>Bir tranzaksiyada ruxsat etilgan eng kam va eng yuqori summa</td><td>Operatorning “To‘lovlar/Qoidalar” sahifasi</td></tr><tr><td>Ishlov berish vaqti</td><td>Tranzaksiya yakuniga qadar sarflanadigan vaqt (operator + to‘lov tarmog‘i)</td><td>Operator jadvali va to‘lov provayderi shartlari</td></tr><tr><td>On‑chain fee (kripto)</td><td>Blokcheynda tranzaksiyani tasdiqlash uchun majburiy komissiya</td><td>Tarmoq eksploreri va hamyon ko‘rsatkichi</td></tr><tr><td>Karta komissiyasi</td><td>Acquirer/processor tomonidan qo‘llanadigan to‘lov; ayrim hollarda foydalanuvchiga yansitilishi mumkin</td><td>Operator tariflari yoki chek/kvitansiya</td></tr><tr><td>Valyuta konversiyasi</td><td>Karta/tarmoq valyutasi bilan hisob‑kitob valyutasi o‘rtasidagi ayirboshlash</td><td>Emitent bank kursi, <a href="https://cbu.uz/uz/">Markaziy bank</a> ma’lumotlari</td></tr><tr><td>UZCARD/HUMO</td><td>O‘zbekistonning milliy karta tizimlari, UZS ekotizimi</td><td><a href="https://uzcard.uz/">UZCARD</a>, <a href="https://humo.uz/">HUMO</a> rasmiy saytlari</td></tr></tbody></table>
+
+Amaliy xulosa: limitlar va komissiyalarni tekshirish bilan birga, konversiya kursini ham solishtiring. Kriptoda tarmoq to‘lovi va narx volatilligini, kartalarda esa 3‑D Secure va ehtimoliy DCC’ni inobatga oling.
+
+### To‘lovlar xavfsizmi: SSL/TLS, 3‑D Secure va PCI DSS?
+
+Onlayn to‘lov xavfsizligi bir nechta qatlamdan iborat: aloqa kanali shifrlanishi (SSL/TLS), karta egasi autentifikatsiyasi (EMV 3‑D Secure 2.x) va savdogar/processor infratuzilmasining sertifikatsiyalangan boshqaruvi (PCI DSS). Quyida ularning har biri bo‘yicha tekshiruv nuqtalari keltiriladi.
+
+SSL/TLS (aloqa shifrlash):
+ 
+- TLS 1.2 yoki 1.3 versiyasi tavsiya etiladi; sertifikat zanjiri to‘liq va amal qiladi.
+- Brauzer manzil qismida “https://” va amal qiladigan sertifikat ko‘rsatkichi bo‘lishi shart.
+- Standartlar: [TLS 1.3 (RFC 8446)](https://www.rfc-editor.org/rfc/rfc8446).
+
+EMV 3‑D Secure (3DS 2.x):
+ 
+- Karta egasini qo‘shimcha tekshirish (biometriya, OTP, banking ilova push) orqali firibgarlikni kamaytiradi.
+- Mobil va veb uchun “frictionless/challenge” oqimlarini qo‘llab-quvvatlaydi.
+- Standartlar: [EMVCo 3‑D Secure](https://www.emvco.com/emv-technologies/3d-secure/).
+
+PCI DSS (to‘lov kartalari ma’lumotlari xavfsizligi standarti):
+ 
+- PCI DSS 4.0 talablari savdogar va processorlarga kartama’lumotlarni saqlash/uzatish/payvand qilishda qat’iy nazoratlarni belgilaydi.
+- Amaliy jihatlar: tarmoq segmentatsiyasi, shifrlash, zaiflik skanerlari (ASV), penetratsion testlar, kirishlarni jurnal qilish.
+- Rasmiy manba: [PCI Security Standards Council](https://www.pcisecuritystandards.org/).
+
+Foydalanuvchi sifatida nimalarni tekshirasiz? To‘lov sahifasi https domenidadir, bankingiz 3DS so‘rasa, autentifikatsiyani rasmiy banking kanali orqali tasdiqlaysiz, va to‘lov formasi ishonchli provayder (iframe yoki qayta yo‘naltirish) orqali kelayotganini ko‘rasiz.
+
+### KYC hujjatlari: qachon so‘raladi va nimalar kerak?
+
+KYC/AML talablari xalqaro amaliyot bo‘lib, firibgarlik va pul yuvishni oldini olishga qaratilgan. Platformalar odatda birinchi yirik yechib olishdan oldin yoki faoliyatda nomuvofiqliklar kuzatilganda tekshiruvni faollashtiradi.
+
+Qachon so‘raladi:
+ 
+- Birinchi yechib olishdan avval yoki umumiy aylanma ma’lum thresholddan oshganda.
+- Shaxsiy ma’lumotlar nomuvofiqligi, to‘lov usuli egasi mos kelmasligi, ko‘p hisob alomatlari.
+- Yuqori xavfli geolokatsiya/VPN izlari yoki noodatiy tranzaksiya naqshlari.
+
+Nimalar kerak bo‘lishi mumkin:
+ 
+- Shaxsni tasdiqlovchi hujjat: pasport yoki ID karta (old/orka, ba’zan selfi‑verifikatsiya).
+- Manzilni tasdiqlash: kommunal to‘lov kvitansiyasi yoki bank statement (yaqin 3 oy ichida rasmiy).
+- To‘lov usuli egaligi: karta oldi (bir nechta raqam yopilgan), bank hisobi rekvizitlari yoki hamyon skrinshoti (shaxsiy ma’lumotlar mos).
+- Daromad manbai (SOF/SOW): katta hajmda operatsiyalar bo‘lsa, ish haqi ma’lumotlari yoki deklaratsiyalar talab qilinishi mumkin.
+
+Amaliy tavsiyalar:
+ 
+- Hujjatlarni yuqori sifatda, kadr chetlarini to‘liq ko‘rinadigan qilib yuklang.
+- Hujjatdagi ism‑familiya hisobdagi ma’lumotlar bilan aynan bir xil bo‘lsin.
+- Verifikatsiya yakunlanguncha pul o‘tkazmalarini ko‘paytirmang; tekshiruv vaqtini kuting.
+
+Mahalliy to‘lov ekotizimi haqida rasmiy manbalar: [UZCARD](https://uzcard.uz/), [HUMO](https://humo.uz/), normativ axborotlar uchun [O‘zbekiston Respublikasi Markaziy banki](https://cbu.uz/uz/). Xalqaro xavfsizlik standartlari bo‘yicha: [EMVCo](https://www.emvco.com/emv-technologies/3d-secure/) va [PCI SSC](https://www.pcisecuritystandards.org/).
+
+## FunPari taqqoslash va haqiqat sinovi
+
+Ushbu bo‘limda FunPari’ni boshqa ommabop onlayn platformalar (Megapari, 1xbetuz, Fansport, Wowbet) bilan amaliy mezonlar kesimida qanday taqqoslash mumkinligi, O‘zbekistonda onlayn tikish segmentining tarixiy rivoji va “teskari dalil” — ya’ni qachon FunPari siz uchun mos tanlov bo‘lmasligi mumkinligi tahlil qilinadi. Keltirilgan mezonlar sanoatdagi keng qabul qilingan amaliyot va umumiy texnik-ijobiy standartlarga asoslanadi; aniq parametrlar va shartlar har bir operator siyosatiga bog‘liq bo‘lib, ularning rasmiy sahifalaridagi yangilanishlar ustuvor hisoblanadi.
+
+### FunPari vs Megapari, 1xbetuz, Fansport, Wowbet: farqlar nima?
+
+Operatorlar o‘rtasidagi real farqlar ko‘pincha marja, bozor chuqurligi, live funksiyalar, mahalliy to‘lovlar, mobil ilovalar sifati, til qo‘llovi va mas’uliyatli o‘yin vositalarida namoyon bo‘ladi. Quyidagi amaliy cheklist yordamida har bir platformani xolis baholashingiz mumkin:
+<table><thead><tr><th>Mezon</th><th>Ta’rif</th><th>Qanday tekshirasiz</th><th>Haqiqat testi</th></tr></thead><tbody><tr><td>Marja (margin)</td><td>Koeffitsientlarga qo‘shilgan operator ustamasi</td><td>Bir nechta natija ehtimolliklari yig‘indisini hisoblang (yevropa odds): ∑(1/k) − 1</td><td>Peshqadam ligalarda pastroq marja odatiy</td></tr><tr><td>Bozor chuqurligi</td><td>Bir o‘yinga taklif etilgan bozorlar soni va turlari</td><td>“Match markets” ro‘yxatini solishtiring (handikap, total, o‘yinchi statistikasi)</td><td>Yirik ligalarda yuzlab bozorlar bo‘lishi mumkin</td></tr><tr><td>Live imkoniyatlar</td><td>Live koeffitsient yangilanish tezligi, “suspend”, kechikish</td><td>Jonli o‘yinda narx o‘zgarishi va kechikishni kuzating</td><td>Tez yangilanish = yaxshiroq tajriba</td></tr><tr><td>Cash Out</td><td>Garovni muddatidan oldin yopish funksiyasi</td><td>Kuponda to‘liq/qisman/auto cash out mavjudligini tekshiring</td><td>Taklif narxi odatda kichik chegirma bilan bo‘ladi</td></tr><tr><td>Streaming</td><td>Video translyatsiyalar va grafik trackerlar</td><td>Match sahifasida “Live stream” yoki “Match tracker” bor-yo‘qligi</td><td>Huquqiy cheklovlarga bog‘liq bo‘lishi mumkin</td></tr><tr><td>Mahalliy to‘lovlar</td><td>UZCARD/HUMO, bank o‘tkazmasi, kripto</td><td>“Kassa/To‘lovlar” bo‘limidagi metodlar va limitlarni tekshiring</td><td>Limit/komissiya va 3‑D Secure muhim</td></tr><tr><td>Til va qo‘llab-quvvatlash</td><td>Uzbek/ru interfeys, tezkor yordam kanallari</td><td>Interfeys tilini, sahifadagi yordam chat/e‑pochtani ko‘ring</td><td>24/7 chat foydalidir</td></tr><tr><td>Promolar shaffofligi</td><td>Bonuslar, garov talablari, cheklovlar</td><td>Bonus T&amp;C bandlarida wagering, maksimal yutuq, muddatni o‘qing</td><td>Qisqa va aniq T&amp;C — yaxshi belgi</td></tr><tr><td>Mas’uliyatli o‘yin</td><td>Limitlar, “cool‑off”, o‘z‑o‘zini chetlatish</td><td>Profil sozlamalarida vositalar mavjudligini tekshiring</td><td>O‘yin gigiyenasini qo‘llab-quvvatlaydi</td></tr><tr><td>Mobil tajriba</td><td>Android APK/iOS App/PWA barqarorligi</td><td>Ilovaning barqarorligi va ruxsatlarini baholang</td><td>Tez yuklanish va kam “crash”lar afzal</td></tr></tbody></table>
+
+Amaliy maslahat: aniq brend tanlashda yuqoridagi mezonlarni bitta o‘yin yoki liga doirasida yonma‑yon sinab ko‘ring (bir xil vaqtda, bir xil bozor). Bu marja, keshout va live yangilanish tezligidagi farqni xolis ko‘rsatadi.
+
+### Tarixiy kontekst: O‘zbekistonda onlayn tikish qanday o‘zgardi?
+
+Oxirgi o‘n yil ichida foydalanuvchi tajribasini belgilagan omillar texnologik va to‘lov infratuzilmasidagi o‘zgarishlar bilan bog‘liq. Smartfonlar, 4G tarmoqlar va brauzer texnologiyalarining rivoji jonli bozorlarni ommalashtirdi; PWA va yengil mobil saytlar kengaydi. Mahalliy to‘lov ekotizimi ham sezilarli yangilandi: UZCARD’dan tashqari HUMO milliy to‘lov tizimi 2019 yildan boshlab amaliyotga kirib keldi, bank ilovalari va 3‑D Secure autentifikatsiyasi kengroq qo‘llanila boshladi. Global miqyosda esa live tikish, keshout, mikromarketlar (masalan, keyingi burchak, keyingi gem) va tezkor “crash” o‘yinlarining mashhurligi oshdi. Xalqaro operatorlar odatda xorijiy yurisdiksiyalarda litsenziyalanadi; shu sababli foydalanuvchilar har doim rasmiy manbalar, to‘lov cheklovlari va KYC tartiblarini oldindan o‘rganib chiqishga e’tibor berishadi.
+
+- Texnik taraf: real vaqtli odds modellari va ma’lumot feed’lari (statistika, video) tezlashdi.
+- To‘lov taraf: kartalarda 3‑D Secure va tranzaksiya monitoringi kengaydi; kriptoda esa on‑chain to‘lovlar paydo bo‘ldi.
+- UX taraf: mobil birinchi dizayn, PWA, push bildirishnomalar, tezkor keshout.
+
+Xulosa: texnologiya va to‘lov infratuzilmasi yuksalishi O‘zbekiston foydalanuvchilarining ham global funksiyalardan foydalanish tajribasini yaxshiladi; biroq operatorlar bo‘yicha siyosatlar, cheklovlar va shartlar turlicha bo‘lishi mumkin.
+
+### Teskari dalil: qachon FunPari sizga mos emas?
+
+Quyidagi holatlarda boshqa format yoki operatorni ko‘rib chiqish mantiqan to‘g‘ri bo‘lishi mumkin. Maqsad — ehtiyoj va ustuvorliklaringizga aniq moslikni topish:
+
+- Aniq yurisdiksiya va mahalliy litsenziya talab qilsangiz: faqat to‘liq mahalliy litsenziyalash va soliq hisobi bilan ishlashni xohlaysiz.
+- Birja uslubidagi garov (betting exchange) kerak bo‘lsa: back/lay, komissiya asosidagi modelni tanlaysiz.
+- Raqamli farovonlik vositalari (kuchli limitlar, o‘z‑o‘zini chetlatish, detal statistika) siz uchun majburiy bo‘lsa va ular yetarli darajada bo‘lmasa.
+- To‘lov preferensiyalari cheklangan bo‘lsa: faqat ma’lum karta turi yoki faqat kripto bilan ishlamoqchisiz; mos kelmasa — muqobil qidiring.
+- TEZ KYC talab qilmaslikni istasangiz: katta yechib olishlarda KYC odatda majburiy; bunda tayyor bo‘lmasangiz, mos kelmasligi mumkin.
+- Nolinchi yoki juda past marja kutayotgan bo‘lsangiz: sanoat amaliyotida marja mavjud; arbitraj uchun ultra past marja izlayotganlar boshqa modelni afzal ko‘rishi mumkin.
+
+Eng to‘g‘ri yondashuv — ehtiyojlar ro‘yxatini tuzish (to‘lov, live funksiyalar, marja, til, yordam sifati) va shular bo‘yicha bir necha operatorni sinovdan o‘tkazish. Natijada siz uchun real qiymat beradigan platformani xolis aniqlaysiz.
+
+## Frequently Asked Questions
+
+### FunPari rasmiy domenini qanday tekshirish va klon saytlardan farqlash mumkin?
+
+Eng tez yo‘l — sertifikat va manba verifikatsiyasi: domen HTTPS ostida bo‘lishi, TLS sertifikatida “Common Name/SubjectAltName” rasmiy domen bilan mos kelishi va u ijtimoiy tarmoqlardagi rasmiy profillardan qayta tasdiqlanishi kerak. Qo‘shimcha tekshiruv sifatida WHOIS’da domen yaratilgan sanasini va sertifikat shaffofligi jurnallarini (crt.sh) ko‘rib, shubhali punycode ko‘rinishlari va yozilishdagi bir harfli farqlarni aniqlang; ko‘p hollarda klon saytlar 30–90 kun muddatli yangi sertifikatlar bilan paydo bo‘ladi.
+
+### FunPari operatori litsenziyasini qayerdan va qanday tasdiqlash mumkin?
+
+Litsenziya raqami saytning pastki qismida (footer) yoki “Terms/License” bo‘limida bo‘ladi, uni regulyator reyestrida tekshirish kerak. Malta (MGA) uchun public register, Buyuk Britaniya (UKGC) uchun Public Register, Kurakao uchun regulator sahifasidagi verifikatsiya havolasi orqali “Licensee name”, “Status: Active/Suspended”, “License number” mos kelishini tekshiring; haqiqiy yozuv odatda litsenziat nomi, manzili va amal qilish muddatini aniq ko‘rsatadi.
+
+### APK imzosi yangilanishdan keyin o‘zgarsa, bu nimani anglatadi?
+
+Bir xil ishlab chiquvchi uchun SHA‑256 imzo izi versiyalar orasida o‘zgarmasligi kerak; izning almashishi fayl qayta imzolanganini bildiradi. Amaliy tekshiruv: o‘rnatilgan ilovadan va yangi APK’dan olingan imzo izlarini solishtiring; agar 64 belgili HEX izlari mos kelmasa, o‘rnatishni to‘xtating va rasmiy manbani qayta tekshiring.
+
+### UZCARD/HUMO bilan 3‑D Secure tasdiqlash ishlamasa, eng ko‘p uchraydigan sabablar nimalar?
+
+Ko‘pincha muammo noto‘g‘ri 3DS oqimi yoki bank limitlari bilan bog‘liq bo‘ladi: OTP muddatining o‘tib ketishi (odatda 120–180 soniya), noto‘g‘ri kiritishlar chegarasi (ko‘pincha 3–5 urinish), internet-to‘lovlar limiti yoki kartaning onlayn to‘lovlari o‘chirilgan bo‘lishi. Tekshiring: banking ilovada 3DS/online to‘lovlar yoqilganini, karta valyutasi va hisob-valyutaning konversiya siyosatini, va to‘lov sahifasining https domenida ekanini; muammo davom etsa, emitent bankdagi limitlar va antifrod blokini aniqlashtiring.
+
+### USDT ERC20 va TRC20 tarmoqlarini adashtirsam, depozitni qaytarib olamanmi?
+
+Odatda yo‘q: xato tarmoqqa yuborilgan on‑chain tranzaksiya qaytarilmaydi, chunki u boshqa blokcheynda tasdiqlanadi. Har doim depozit sahifasida ko‘rsatilgan tarmoqni tanlang, kerak bo‘lsa memo/tag maydonlarini ham to‘ldiring; tasdiqlash soni odatda ERC20 uchun taxminan 12 blok, TRC20 uchun 20 blok, BTC uchun 1–3 blok bo‘ladi, bu tarmoq yuklanishiga qarab 1–60 daqiqa oralig‘ida yakunlanadi.
+
+### Cash Out qanday hisoblanadi: amaliy formula va misol?
+
+Naqdin olish taklifi joriy adolatli ehtimollik va platforma chegirmasiga tayanadi: taxminan CashOut ≈ Stake × (Joriy adolatli odds / Siz olgan odds) × (1 − chegirma). Misol: 100 birlikni 2.00 koeffitsientda tiksangiz, joriy adolatli narx 1.80 bo‘lsa, marjasiz 90 birlik, 2% chegirma bilan esa 88.2 birlik taklif qilinadi; real chegirma odatda 1–5% diapazonda bo‘ladi.
+
+### Slotlar RTP’sini o‘yin ichida qanday topaman va ‘range RTP’ nimani anglatadi?
+
+RTP odatda o‘yin menyusidagi ‘i’ yoki ‘Paytable/Help’ sahifasida ko‘rsatiladi; unda aniq foiz yoki masalan 88–96% kabi ‘range’ bo‘lishi mumkin. Range RTP provayder bir nechta konfiguratsiyani chiqarganini bildiradi; o‘yin oynasida yozilgan versiya/build ID va RTP foizini provayder saytidagi sahifa bilan solishtiring, ayrim yurisdiksiyalarda (masalan, UKGC) o‘yin ichida majburiy RTP ma’lumoti talab etiladi.
+
+### KYC tekshiruvi odatda qancha vaqt oladi va fayllar uchun texnik talablar qanday?
+
+Ko‘p operatorlarda KYC 24–48 soat ichida yakunlanadi, yuklama davrida 72 soatga cho‘zilishi mumkin. Fayllar uchun keng tarqalgan talablar: JPG/PNG/PDF format, 1–10 MB hajm, hujjat burchaklari to‘liq ko‘rinadigan, matn o‘qilishi uchun kamida 1000 px kenglik yoki taxminan 300 dpi ekvivalent; selfi/liveness tekshiruvi 5–10 soniyali video bilan amalga oshirilishi mumkin.
+
+### 2FA haqiqatan ham hisobni himoya qiladimi: qaysi usul qanchalik samarali?
+
+Ha, ikkinchi omil sezilarli himoya qo‘shadi: Google tadqiqotlariga ko‘ra SMS‑2FA avtomatlashtirilgan bot hujumlarini deyarli 100%, ommaviy fishingni taxminan 96%, nishonli fishingni 76% gacha to‘xtatadi; autentifikator ilovalari va xavfsizlik kalitlari bundan ham barqarorroq. Amaliy jihatdan e‑pochta/parol + TOTP (Google/Microsoft Authenticator) kombinatsiyasi hisob buzilishi xavfini keskin kamaytiradi, zaxira kodlarni esa oflayn saqlash lozim.
+
+### Mobil ilova ruxsatlaridan qaysilari minimal zarur va qaysilari shubhali hisoblanadi?
+
+Odatda internet ulanishi va push bildirishnomalar ixtiyoriy zaruriyat, kamera/mikrofon faqat KYC yoki chat qo‘ng‘iroqlari uchun talab qilinadi. Kontaktlar, SMS o‘qish, qo‘ng‘iroqlar jurnali, joylashuv kabi ruxsatlar qimor funksiyasi uchun odatda talab etilmaydi; bunday so‘rovlar ko‘rinsa, ruxsat bermaslik va ilovani manbasi hamda imzosini qayta tekshirish tavsiya etiladi.
+
+### Kirish bloklanganda VPN ishlatish to‘g‘rimi yoki xavfsizroq alternativ bormi?
+
+VPN geolokatsiyani o‘zgartirib, qo‘shimcha xavfsizlik tekshiruvlari va 2FA chaqiriqlarini keltirib chiqarishi mumkin; rasmiy e’lon qilingan mirror domenlardan foydalanish xavfsizroq. Muammo DNS qatlamida bo‘lsa, ishonchli DNS (1.1.1.1 yoki 8.8.8.8) orqali tekshiruv o‘tkazing va faqat rasmiy kanallarda e’lon qilingan havolalardan kirib, HTTPS sertifikati mosligini tasdiqlang.
+
+### Yutuqlar bo‘yicha soliq va hisobotni qanday yuritgan ma’qul?
+
+Soliq majburiyatlari rezidentlik va mahalliy qonunchilikka bog‘liq; operatsiyalarni aniq reyestrda yuritish va mutaxassis bilan maslahatlashish kerak. Amaliyotda sana, summa, valyuta va kursni, to‘lov provayderi kvitansiyasini, hamda Markaziy bank kurs sahifasidagi mos kun qiymatini saqlash keyingi hisobot va verifikatsiyada vaqtni tejaydi.
