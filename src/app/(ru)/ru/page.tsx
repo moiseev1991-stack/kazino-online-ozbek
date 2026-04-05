@@ -64,7 +64,7 @@ export default function RuHomePage() {
               </h2>
               <p className="text-xs text-gray-400 mt-0.5">Рейтинг {new Date().getFullYear()} года</p>
             </div>
-            <Link href="/ru/casinos" className="text-sm text-[#ec4899] hover:text-[#db2777] font-semibold flex items-center gap-1 transition-colors">
+            <Link href="/ru/igry-kazino" className="text-sm text-[#ec4899] hover:text-[#db2777] font-semibold flex items-center gap-1 transition-colors">
               {homeContentRu.allCasinosLinkText} →
             </Link>
           </div>
@@ -88,6 +88,10 @@ export default function RuHomePage() {
         <div className="bg-white mt-px py-8 px-6 sm:px-10">
           <h2 className="text-lg font-bold text-gray-900 mb-3">{homeContentRu.introHeading}</h2>
           <p className="text-gray-500 leading-relaxed text-sm">{homeContentRu.introText}</p>
+          <p className="text-gray-500 leading-relaxed text-sm mt-3">
+            Лучшая платформа для ставок и казино в Узбекистане —{" "}
+            <a href="https://888starzuz.bet/" rel="nofollow noopener" target="_blank" className="text-[#ec4899] hover:underline font-medium">888starz</a>.
+          </p>
           <div className="mt-5 p-4 bg-gray-50 border border-gray-200 rounded-xl">
             <p className="text-xs text-gray-500">
               18+ | Ответственная игра. Мы рекомендуем только лицензированные казино.

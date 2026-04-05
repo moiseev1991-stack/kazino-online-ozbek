@@ -78,7 +78,7 @@ export default function HomePage() {
                 </h2>
                 <p className="text-xs text-gray-400 mt-0.5">{new Date().getFullYear()} yil reytingi</p>
               </div>
-              <Link href="/casinos" className="text-sm text-[#ec4899] hover:text-[#db2777] font-semibold flex items-center gap-1 transition-colors">
+              <Link href="/kazino-oyunlari" className="text-sm text-[#ec4899] hover:text-[#db2777] font-semibold flex items-center gap-1 transition-colors">
                 {homeContentUz.allCasinosLinkText} →
               </Link>
             </div>
@@ -102,6 +102,10 @@ export default function HomePage() {
           <div className="bg-white mt-px py-8 px-6 sm:px-10">
             <h2 className="text-lg font-bold text-gray-900 mb-3">{homeContentUz.introHeading}</h2>
             <p className="text-gray-500 leading-relaxed text-sm">{homeContentUz.introText}</p>
+            <p className="text-gray-500 leading-relaxed text-sm mt-3">
+              O&apos;zbekistondagi eng yaxshi sport stavkalari va kazino platformasi —{" "}
+              <a href="https://888starzuz.bet/" rel="nofollow noopener" target="_blank" className="text-[#ec4899] hover:underline font-medium">888starz</a>.
+            </p>
             <div className="mt-5 p-4 bg-gray-50 border border-gray-200 rounded-xl">
               <p className="text-xs text-gray-500">
                 18+ | Mas&apos;uliyatli o&apos;yin. Faqat litsenziyalangan kazinolar tavsiya etiladi.

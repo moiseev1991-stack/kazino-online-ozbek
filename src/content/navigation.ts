@@ -31,6 +31,7 @@ export const navGroupsUz: NavGroup[] = [
       { label: "20Bet", href: "/20bet" },
       { label: "SpinBetter", href: "/spinbetter" },
       { label: "BetWinner", href: "/betwinner" },
+      { label: "888Starz", href: "/888starz" },
     ],
   },
   {
@@ -78,6 +79,7 @@ export const navGroupsRu: NavGroup[] = [
       { label: "20Bet", href: "/ru/20bet" },
       { label: "SpinBetter", href: "/ru/spinbetter" },
       { label: "BetWinner", href: "/ru/betwinner" },
+      { label: "888Starz", href: "/ru/888starz" },
     ],
   },
   {

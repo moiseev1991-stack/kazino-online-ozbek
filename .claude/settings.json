@@ -7,7 +7,9 @@
       "Read(*)",
       "Glob(*)",
       "Grep(*)",
-      "TodoWrite(*)"
-    ]
+      "WebFetch(*)",
+      "WebSearch(*)"
+    ],
+    "deny": []
   }
 }
