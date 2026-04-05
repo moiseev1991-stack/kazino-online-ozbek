@@ -15,35 +15,35 @@ export interface LegalPage {
 export const legalPages: LegalPage[] = [
   {
     slug: "privacy-policy",
-    title: "Политика конфиденциальности / Maxfiylik Siyosati",
+    title: "Polityka prywatności",
     lastUpdated: "2026-01-01",
-    metaTitle: "Политика конфиденциальности | Kazino Online O'zbek",
+    metaTitle: "Polityka prywatności | Kazino Online O'zbek",
     metaDescription:
-      "Политика конфиденциальности сайта Kazino Online. Узнайте, какие данные мы собираем, как используем и защищаем вашу личную информацию.",
+      "Polityka prywatności serwisu Kazino Online. Dowiedz się, jakie dane zbieramy, jak je wykorzystujemy i chronimy Twoje informacje osobowe.",
     sections: [
       {
-        heading: "Общие положения / Umumiy qoidalar",
-        body: "Настоящая Политика конфиденциальности описывает, как сайт kazino-online-ozbek.com («Сайт») собирает, использует и защищает информацию пользователей. Используя Сайт, вы соглашаетесь с условиями данной Политики. Сайт носит информационный характер и не предоставляет услуги азартных игр напрямую.",
+        heading: "Postanowienia ogólne",
+        body: "Niniejsza Polityka prywatności opisuje, w jaki sposób serwis kazino-online-ozbek.com (\"Serwis\") zbiera, wykorzystuje i chroni informacje użytkowników. Korzystając z Serwisu, wyrażasz zgodę na warunki niniejszej Polityki. Serwis ma charakter informacyjny i nie świadczy usług hazardowych bezpośrednio.",
       },
       {
-        heading: "Сбор данных / Ma'lumot to'plash",
-        body: "Мы собираем минимальный объём данных, необходимых для корректной работы Сайта: IP-адрес, тип и версия браузера, операционная система, страницы посещения и время визита. Персональные данные (имя, e-mail) собираются только в случае добровольного обращения через контактную форму.",
+        heading: "Zbieranie danych",
+        body: "Zbieramy minimalną ilość danych niezbędnych do prawidłowego funkcjonowania Serwisu: adres IP, typ i wersja przeglądarki, system operacyjny, odwiedzane strony oraz czas wizyty. Dane osobowe (imię, adres e-mail) są zbierane wyłącznie w przypadku dobrowolnego kontaktu za pośrednictwem formularza kontaktowego.",
       },
       {
-        heading: "Файлы cookie / Cookie fayllar",
-        body: "Сайт использует технические и аналитические cookie-файлы для улучшения пользовательского опыта и анализа трафика. Технические cookie необходимы для работы Сайта и не могут быть отключены. Аналитические cookie вы можете отключить в настройках браузера. Продолжая использование Сайта, вы соглашаетесь с применением cookie.",
+        heading: "Pliki cookie",
+        body: "Serwis wykorzystuje techniczne i analityczne pliki cookie w celu poprawy doświadczeń użytkownika oraz analizy ruchu. Techniczne pliki cookie są niezbędne do działania Serwisu i nie mogą zostać wyłączone. Analityczne pliki cookie możesz wyłączyć w ustawieniach przeglądarki. Kontynuując korzystanie z Serwisu, wyrażasz zgodę na stosowanie plików cookie.",
       },
       {
-        heading: "Сторонние сервисы / Uchinchi tomon xizmatlari",
-        body: "Сайт использует сервисы Google Analytics и аналогичные инструменты веб-аналитики для изучения аудитории и улучшения контента. Данные сервисы собирают обезличенную статистику согласно собственной политике конфиденциальности. Кроме того, Сайт содержит партнёрские ссылки на казино и букмекеров; переход по ним регулируется политикой конфиденциальности соответствующих операторов.",
+        heading: "Usługi zewnętrzne",
+        body: "Serwis korzysta z Google Analytics i podobnych narzędzi analitycznych w celu badania ruchu i ulepszania treści. Usługi te zbierają zanonimizowane statystyki zgodnie z własną polityką prywatności. Ponadto Serwis zawiera linki partnerskie do kasyn i bukmacherów; korzystanie z nich podlega polityce prywatności odpowiednich operatorów.",
       },
       {
-        heading: "Защита данных / Ma'lumot xavfsizligi",
-        body: "Для защиты передаваемых данных применяется шифрование по протоколу TLS/SSL (HTTPS). Мы не передаём и не продаём персональные данные пользователей третьим лицам, за исключением случаев, предусмотренных законодательством.",
+        heading: "Ochrona danych",
+        body: "Do ochrony przesyłanych danych stosowane jest szyfrowanie TLS/SSL (HTTPS). Nie przekazujemy ani nie sprzedajemy danych osobowych użytkowników osobom trzecim, z wyjątkiem przypadków przewidzianych przez prawo.",
       },
       {
-        heading: "Права пользователей / Foydalanuvchi huquqlari",
-        body: "Вы вправе запросить доступ к своим данным, их исправление или удаление, направив запрос через страницу контактов. Мы обработаем ваш запрос в разумные сроки. Настоящая Политика конфиденциальности может обновляться; актуальная версия всегда доступна на этой странице.",
+        heading: "Prawa użytkowników",
+        body: "Masz prawo żądać dostępu do swoich danych, ich poprawienia lub usunięcia, wysyłając zapytanie za pośrednictwem strony kontaktowej. Rozpatrzymy Twoje zgłoszenie w rozsądnym terminie. Niniejsza Polityka prywatności może być aktualizowana; aktualna wersja jest zawsze dostępna na tej stronie.",
       },
     ],
   },
