@@ -660,7 +660,7 @@ export const brands: Brand[] = [
     name: "888Starz Casino",
     url: "/go/888starz",
     logo: "/logos/888starz.png",
-    rating: 8.3,
+    rating: 9.1,
     bonus: "100% up to $140 + 30 FS",
     established: 2018,
     licenseInfo: "Curaçao eGaming",

@@ -209,7 +209,7 @@ export default async function CasinoOrAppPage({ params }: Props) {
               </div>
             </div>
           </div>
-          <CtaButton href={`/go/${page.brandSlug}`} label={`${page.brandName} ni Yuklab Olish →`} variant="cta" size="lg" external />
+          <CtaButton href={page.ctaUrl ?? `/go/${page.brandSlug}`} label={`${page.brandName} ni Yuklab Olish →`} variant="cta" size="lg" external />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">

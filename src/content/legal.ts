@@ -14,28 +14,36 @@ export interface LegalPage {
 
 export const legalPages: LegalPage[] = [
   {
-    slug: "privacy-policy-2",
-    title: "Maxfiylik Siyosati",
+    slug: "privacy-policy",
+    title: "Политика конфиденциальности / Maxfiylik Siyosati",
     lastUpdated: "2026-01-01",
-    metaTitle: "Maxfiylik Siyosati | Kazino Online O'zbek",
+    metaTitle: "Политика конфиденциальности | Kazino Online O'zbek",
     metaDescription:
-      "Kazino Online O'zbek saytining maxfiylik siyosati. Shaxsiy ma'lumotlaringiz qanday to'planishi va ishlatilishi haqida.",
+      "Политика конфиденциальности сайта Kazino Online. Узнайте, какие данные мы собираем, как используем и защищаем вашу личную информацию.",
     sections: [
       {
-        heading: "Ma'lumot to'plash",
-        body: "Biz faqat sayt xizmatlarini ko'rsatish uchun zarur bo'lgan ma'lumotlarni to'playmiz. Bunga IP-manzil, brauzer turi va sahifaga kirish vaqti kiradi.",
+        heading: "Общие положения / Umumiy qoidalar",
+        body: "Настоящая Политика конфиденциальности описывает, как сайт kazino-online-ozbek.com («Сайт») собирает, использует и защищает информацию пользователей. Используя Сайт, вы соглашаетесь с условиями данной Политики. Сайт носит информационный характер и не предоставляет услуги азартных игр напрямую.",
       },
       {
-        heading: "Cookie fayllar",
-        body: "Sayt cookie fayllardan foydalanadi. Cookie fayllar sayt ishlashini yaxshilash va foydalanuvchi tajribasini takomillashtirish uchun ishlatiladi. Brauzer sozlamalaridan cookie fayllarni o'chirib qo'yishingiz mumkin.",
+        heading: "Сбор данных / Ma'lumot to'plash",
+        body: "Мы собираем минимальный объём данных, необходимых для корректной работы Сайта: IP-адрес, тип и версия браузера, операционная система, страницы посещения и время визита. Персональные данные (имя, e-mail) собираются только в случае добровольного обращения через контактную форму.",
       },
       {
-        heading: "Uchinchi tomon xizmatlari",
-        body: "Biz Google Analytics va shunga o'xshash tahlil xizmatlaridan foydalanamiz. Ushbu xizmatlar o'z maxfiylik siyosatiga ega.",
+        heading: "Файлы cookie / Cookie fayllar",
+        body: "Сайт использует технические и аналитические cookie-файлы для улучшения пользовательского опыта и анализа трафика. Технические cookie необходимы для работы Сайта и не могут быть отключены. Аналитические cookie вы можете отключить в настройках браузера. Продолжая использование Сайта, вы соглашаетесь с применением cookie.",
       },
       {
-        heading: "Ma'lumot xavfsizligi",
-        body: "Shaxsiy ma'lumotlaringiz xavfsizligini ta'minlash uchun zamonaviy SSL shifrlash texnologiyasidan foydalanamiz.",
+        heading: "Сторонние сервисы / Uchinchi tomon xizmatlari",
+        body: "Сайт использует сервисы Google Analytics и аналогичные инструменты веб-аналитики для изучения аудитории и улучшения контента. Данные сервисы собирают обезличенную статистику согласно собственной политике конфиденциальности. Кроме того, Сайт содержит партнёрские ссылки на казино и букмекеров; переход по ним регулируется политикой конфиденциальности соответствующих операторов.",
+      },
+      {
+        heading: "Защита данных / Ma'lumot xavfsizligi",
+        body: "Для защиты передаваемых данных применяется шифрование по протоколу TLS/SSL (HTTPS). Мы не передаём и не продаём персональные данные пользователей третьим лицам, за исключением случаев, предусмотренных законодательством.",
+      },
+      {
+        heading: "Права пользователей / Foydalanuvchi huquqlari",
+        body: "Вы вправе запросить доступ к своим данным, их исправление или удаление, направив запрос через страницу контактов. Мы обработаем ваш запрос в разумные сроки. Настоящая Политика конфиденциальности может обновляться; актуальная версия всегда доступна на этой странице.",
       },
     ],
   },

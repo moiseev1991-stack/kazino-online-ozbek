@@ -20,7 +20,7 @@ export const redirects: RedirectItem[] = [
   { slug: "vave", target: "https://vave.com/?ref=uz-affiliate", brand: "vave" },
   { slug: "marathonbet", target: "https://marathonbet.com/?ref=uz-affiliate", brand: "marathonbet" },
   { slug: "win-win", target: "https://winwin.com/?ref=uz-affiliate", brand: "win-win" },
-  { slug: "888starz", target: "https://888starz.com/?ref=uz-affiliate", brand: "888starz" },
+  { slug: "888starz", target: "https://888starzuz.bet/", brand: "888starz" },
   { slug: "pokerdom", target: "https://pokerdom.com/?ref=uz-affiliate", brand: "pokerdom" },
   { slug: "pinco", target: "https://pinco.com/?ref=uz-affiliate", brand: "pinco" },
   { slug: "paripulse", target: "https://paripulse.com/?ref=uz-affiliate", brand: "paripulse" },

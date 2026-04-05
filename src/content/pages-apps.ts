@@ -11,6 +11,7 @@ export interface AppPage {
   steps: string[];
   features: string[];
   body: string;
+  ctaUrl?: string;
   metaTitle: string;
   metaDescription: string;
 }
@@ -183,6 +184,37 @@ export const appPages: AppPage[] = [
     body: "FunPari mobil ilovasi O'zbekiston o'yinchilari uchun maxsus moslashtirilgan. UzCard va Humo orqali to'lovlar qabul qilinadi, o'zbek tili mavjud.",
     metaTitle: "FunPari App Yuklab Olish 2026 | iOS va Android | UzCard",
     metaDescription: "FunPari mobil ilovasini yuklab oling. UzCard va Humo to'lovlari. O'zbek tili. iOS va Android.",
+  },
+  {
+    slug: "888starz-apk",
+    brandSlug: "888starz",
+    brandName: "888Starz",
+    platform: "android",
+    title: "888Starz APK Yuklab Olish",
+    heading: "888Starz APK — Android Ilovasi Yuklab Olish 2026",
+    version: "3.5.0",
+    fileSize: "44 MB",
+    androidVersion: "Android 5.0+",
+    ctaUrl: "https://888starzuz.bet/apk/",
+    steps: [
+      "888starzuz.bet rasmiy saytiga kiring",
+      "Sahifaning pastiga o'ting va 'Android APK' tugmasini bosing",
+      "APK faylini yuklab oling",
+      "Qurilma sozlamalarida 'Noma'lum manbalardan o'rnatish'ga ruxsat bering",
+      "APK faylni oching va o'rnating",
+      "Hisobingizga kiring yoki ro'yxatdan o'ting",
+    ],
+    features: [
+      "3000+ slot o'yinlari",
+      "Jonli kazino",
+      "Sport stavkalari",
+      "Kriptovalyuta to'lovlari",
+      "Tez depozit va yechib olish",
+      "24/7 qo'llab-quvvatlash",
+    ],
+    body: "888Starz Android ilovasi sizga istalgan joyda sport stavkalarini qo'yish va kazino o'yinlarini o'ynash imkonini beradi. Rasmiy APK faylni 888starzuz.bet saytidan bepul yuklab oling.",
+    metaTitle: "888Starz APK Yuklab Olish 2026 | Android Ilovasi",
+    metaDescription: "888Starz Casino Android APK faylini yuklab oling. O'rnatish bo'yicha to'liq qo'llanma. Bepul, rasmiy versiya. Sport stavkalari va kazino bitta ilovada.",
   },
 ];
 

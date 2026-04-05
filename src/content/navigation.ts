@@ -118,7 +118,7 @@ export const footerLinksUz: NavLink[] = [
   { label: "Ruletka", href: "/ruletka" },
   { label: "Mobil Ilovalar", href: "/apps" },
   { label: "Aloqa", href: "/contact" },
-  { label: "Maxfiylik siyosati", href: "/privacy-policy-2" },
+  { label: "Maxfiylik siyosati", href: "/privacy-policy" },
   { label: "Foydalanish shartlari", href: "/terms-and-conditions" },
 ];
 
@@ -129,7 +129,7 @@ export const footerLinksRu: NavLink[] = [
   { label: "Рулетка", href: "/ru/ruletka" },
   { label: "Мобильные приложения", href: "/ru/apps" },
   { label: "Контакты", href: "/ru/contact" },
-  { label: "Политика конфиденциальности", href: "/privacy-policy-2" },
+  { label: "Политика конфиденциальности", href: "/privacy-policy" },
   { label: "Условия использования", href: "/terms-and-conditions" },
 ];
 
