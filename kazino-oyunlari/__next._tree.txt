@@ -4,4 +4,4 @@
 :HL["/logos/22bet.jpg","image"]
 :HL["/logos/888starz.png","image"]
 :HL["/logos/mostbet.webp","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"(uz)","param":null,"prefetchHints":16,"slots":{"children":{"name":"kazino-oyunlari","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"SL_rKVWHBDSCAciqyru6a"}
+0:{"tree":{"name":"","param":null,"prefetchHints":0,"slots":{"children":{"name":"(uz)","param":null,"prefetchHints":16,"slots":{"children":{"name":"kazino-oyunlari","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"lMMO3Zd4Cxh0dK5ed7uLT"}
