@@ -78,7 +78,7 @@ function DropdownMenu({ group, isActive }: { group: NavGroup; isActive: boolean 
 
 export default function Header() {
   const pathname = usePathname();
-  const isRu = pathname.startsWith("/ru");
+  const isRu = pathname === "/ru" || pathname.startsWith("/ru/");
   const navGroups = isRu ? navGroupsRu : navGroupsUz;
   const homeHref = isRu ? "/ru" : "/";
 
